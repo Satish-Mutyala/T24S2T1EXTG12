@@ -24,9 +24,11 @@ namespace Calculator
 		{
 
 		}
-			private void mathCalculatorButton_Click(object sender, RoutedEventArgs e)
+		//Button to redirect to MathCalcualtor page (MainPage)
+		private void mathCalculatorButton_Click(object sender, RoutedEventArgs e)
 		{
-			throw new NotImplementedException();
+			MainPage mathCal = new MainPage();
+			this.Content = mathCal;
 		}
 		private void mortgageCalculatorButton_Click(object sender, RoutedEventArgs e)
 		{
