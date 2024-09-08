@@ -1,0 +1,75 @@
+﻿<Page
+    x:Class="Calculator.CurrencyConversionCalculator"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Calculator"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource SystemControlAcrylicWindowBrush}">
+
+	<Page.Resources>
+		<!-- Custom Styles and Resources -->
+		<SolidColorBrush x:Key="ButtonBackgroundBrush" Color="#33FD331F"/>
+		<SolidColorBrush x:Key="PanelBackgroundBrush" Color="CadetBlue"/>
+		<SolidColorBrush x:Key="TitleBackgroundBrush" Color="Orange"/>
+	</Page.Resources>
+
+	<!-- Main Grid with Styling -->
+	<Grid Background="CadetBlue">
+		<!-- Background color for main layout -->
+		<StackPanel Background="{StaticResource TitleBackgroundBrush}" VerticalAlignment="Top" Margin="0,0,0,10">
+			<TextBlock Text="Currency Conversion Calculator" 
+                       FontFamily="Monotype Corsiva" 
+                       FontSize="40" 
+                       FontWeight="Bold" 
+                       HorizontalAlignment="Center" 
+                       VerticalAlignment="Center" 
+                       Margin="0, 10, 0, 5"/>
+		</StackPanel>
+
+		<StackPanel Background="CadetBlue" HorizontalAlignment="Center" VerticalAlignment="Center" Width="Auto" Margin="10">
+			<!-- Input fields and conversion options -->
+			<StackPanel Background="#FFD8D8D2" Width="450" Margin="10" Padding="10">
+				<!-- Amount input -->
+				<TextBlock Text="Amount:" FontSize="24" FontWeight="Medium" Margin="5"/>
+				<TextBox x:Name="amountValueTextBox" PlaceholderText="Enter amount" FontSize="20" Width="250" Margin="5"/>
+
+				<!-- Currency From and To selection -->
+				<TextBlock Text="From:" FontSize="24" FontWeight="Medium" Margin="5"/>
+				<ComboBox x:Name="fromValueComboBox" FontSize="20" Width="250" Margin="5">
+					<x:String>US Dollar</x:String>
+					<x:String>Euro</x:String>
+					<x:String>British Pound</x:String>
+					<x:String>Indian Rupee</x:String>
+				</ComboBox>
+				<TextBlock Text="To:" FontSize="24" FontWeight="Medium" Margin="5"/>
+				<ComboBox x:Name="toValueComboBox" FontSize="20" Width="250" Margin="5">
+					<x:String>US Dollar</x:String>
+					<x:String>Euro</x:String>
+					<x:String>British Pound</x:String>
+					<x:String>Indian Rupee</x:String>
+				</ComboBox>
+
+				<!-- Buttons for conversion and exit -->
+				<StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
+					<Button Content="Conversion" Name="calcButton" Click="calcButton_Click" 
+                            Width="130" FontSize="20" Margin="5" 
+                            Background="{StaticResource ButtonBackgroundBrush}" />
+					<Button Content="Exit" Name="exitButton" Click="exitButton_Click" 
+                            Width="80" FontSize="20" Margin="5" 
+                            Background="{StaticResource ButtonBackgroundBrush}" />
+				</StackPanel>
+			</StackPanel>
+
+			<!-- Output fields -->
+			<!-- 4 lines for displaying the conversion results and other countries' conversions -->
+			<StackPanel Background="#FFD1ECDA" Width="450" Margin="10" Padding="5">
+				<TextBlock x:Name="entryAmount" Text="Original Amount: " FontSize="18" Margin="5"/>
+				<TextBlock x:Name="currencyConversion" Text="Converted Amount:" FontSize="18" Margin="5"/>
+				<TextBlock x:Name="conversionDetailsCountryB" Text="Converted to another currency: " FontSize="18" Margin="5"/>
+				<TextBlock x:Name="conversionDetailsCountryC" Text="Converted to another currency: " FontSize="18" Margin="5"/>
+			</StackPanel>
+		</StackPanel>
+	</Grid>
+</Page>
