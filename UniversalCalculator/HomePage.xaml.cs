@@ -40,7 +40,8 @@ namespace Calculator
 		}
 		private void miscellaneousConverterButton_Click(object sender, RoutedEventArgs e)
 		{
-			throw new NotImplementedException();
+			MiscellaneousConverter miscellaneousConverter = new MiscellaneousConverter();
+			this.Content = miscellaneousConverter;
 		}
 		private void exitButton_Click(object sender, RoutedEventArgs e)
 		{
