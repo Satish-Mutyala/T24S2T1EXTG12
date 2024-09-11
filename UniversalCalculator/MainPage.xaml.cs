@@ -48,7 +48,7 @@ namespace Calculator
 			Utils.Utils.handleEqualButtonClick();
 		}
 
-		private async void keyPress(CoreWindow sender, CharacterReceivedEventArgs args)
+		private void keyPress(CoreWindow sender, CharacterReceivedEventArgs args)
 		{
 			if ((args.KeyCode >= 48 && args.KeyCode <= 57) || (args.KeyCode >= 96 && args.KeyCode <= 105))
 			{
