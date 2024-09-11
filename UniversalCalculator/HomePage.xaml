@@ -67,6 +67,14 @@
 					<Button x:Name="miscellaneousConverter" Content="Miscellaneous Converter" Click="miscellaneousConverterButton_Click" FontSize="30" Background="#33FD331F" HorizontalAlignment="Center"></Button>
 				</StackPanel>
 
+				<StackPanel Width="534" Padding="10,10,10,10">
+					<StackPanel.Background>
+						<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+							<GradientStop Color="#FFD1ECDA" Offset="1"/>
+						</LinearGradientBrush>
+					</StackPanel.Background>
+					<Button x:Name="tripCalculator" Content="Trip Calculator" Click="tripCalculatorButton_Click" FontSize="30" Background="#33FD331F" HorizontalAlignment="Center" Width="264"></Button>
+				</StackPanel>
 
 				<StackPanel Width="534" Padding="10,10,10,10">
 					<StackPanel.Background>

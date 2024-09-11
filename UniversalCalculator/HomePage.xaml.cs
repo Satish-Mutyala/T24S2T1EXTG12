@@ -1,7 +1,9 @@
 using System;
+using System.Threading.Tasks;
 using Windows.ApplicationModel.Core;
 using Windows.Foundation;
 using Windows.UI.Core;
+using Windows.UI.Popups;
 using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -51,5 +53,11 @@ namespace Calculator
 			Environment.Exit(0); // Exits with status code 0
 		}
 
+		private async void tripCalculatorButton_Click(object sender, RoutedEventArgs e)
+		{
+			var dialogMessage = new MessageDialog("Trip calculator C# code will be developed later");
+			await dialogMessage.ShowAsync();
+			return;
+		}
 	}
 }
