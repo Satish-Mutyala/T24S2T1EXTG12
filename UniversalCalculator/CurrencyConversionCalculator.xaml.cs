@@ -86,7 +86,9 @@ namespace Calculator
 		private void exitButton_Click(object sender, RoutedEventArgs e)
 		{
 			// Navigate back to the main page
-			this.Frame.Navigate(typeof(HomePage));
+			//Return to main menu			
+			HomePage homePage = new HomePage();
+			this.Content = homePage;
 		}
 
 		private double ConvertCurrency(string fromCurrency, string toCurrency, double amount)

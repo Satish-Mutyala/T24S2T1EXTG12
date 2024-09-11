@@ -6,6 +6,7 @@ using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 
+
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
 
@@ -37,7 +38,8 @@ namespace Calculator
 		}
 		private void currencyCalculatorButton_Click(object sender, RoutedEventArgs e)
 		{
-			throw new NotImplementedException();
+			CurrencyConversionCalculator currencyConversionCalculator = new CurrencyConversionCalculator();
+			this.Content = currencyConversionCalculator;
 		}
 		private void miscellaneousConverterButton_Click(object sender, RoutedEventArgs e)
 		{
@@ -46,7 +48,7 @@ namespace Calculator
 		}
 		private void exitButton_Click(object sender, RoutedEventArgs e)
 		{
-			throw new NotImplementedException();
+			Environment.Exit(0); // Exits with status code 0
 		}
 
 	}
