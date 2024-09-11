@@ -27,12 +27,13 @@ namespace Calculator
 		//Button to redirect to MathCalcualtor page (MainPage)
 		private void mathCalculatorButton_Click(object sender, RoutedEventArgs e)
 		{
-			MainPage mathCal = new MainPage();
-			this.Content = mathCal;
+			MainPage mainPage = new MainPage();
+			this.Content = mainPage;
 		}
 		private void mortgageCalculatorButton_Click(object sender, RoutedEventArgs e)
 		{
-			Frame.Navigate(typeof(MortgageCalculator));
+			MortgageCalculator mortgageCalculator = new MortgageCalculator();
+			this.Content = mortgageCalculator;
 		}
 		private void currencyCalculatorButton_Click(object sender, RoutedEventArgs e)
 		{

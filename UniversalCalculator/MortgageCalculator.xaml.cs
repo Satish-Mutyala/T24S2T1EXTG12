@@ -70,8 +70,9 @@ namespace Calculator
 
 		private void ExitButton_Click(object sender, RoutedEventArgs e)
 		{
-			//Return to main menu
-			this.Frame.Navigate(typeof(HomePage));
+			//Return to main menu			
+			HomePage homePage = new HomePage();
+			this.Content = homePage;
 		}
 	}
 }

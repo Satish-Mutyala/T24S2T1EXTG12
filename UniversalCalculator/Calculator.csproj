@@ -122,14 +122,12 @@
     <Compile Include="HomePage.xaml.cs">
       <DependentUpon>HomePage.xaml</DependentUpon>
     </Compile>
-<<<<<<< HEAD
-    <Compile Include="MortgageCalculator.xaml.cs">
-      <DependentUpon>MortgageCalculator.xaml</DependentUpon>
-=======
-    <Compile Include="MiscellaneousConverter.xaml.cs">
-      <DependentUpon>MiscellaneousConverter.xaml</DependentUpon>
->>>>>>> feature_miscellaneous_converter
-    </Compile>
+	<Compile Include="MortgageCalculator.xaml.cs">
+		<DependentUpon>MortgageCalculator.xaml</DependentUpon>
+	</Compile>
+	<Compile Include="MiscellaneousConverter.xaml.cs">
+		<DependentUpon>MiscellaneousConverter.xaml</DependentUpon>
+	</Compile>
     <Compile Include="Utils\Utils.cs" />
     <None Include=".editorconfig" />
     <Compile Include="Controls\NumberButtonControl.xaml.cs">
@@ -172,14 +170,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-<<<<<<< HEAD
-    <Page Include="MortgageCalculator.xaml">
-=======
-    <Page Include="MiscellaneousConverter.xaml">
->>>>>>> feature_miscellaneous_converter
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
+	<Page Include="MortgageCalculator.xaml">
+		<SubType>Designer</SubType>
+		<Generator>MSBuild:Compile</Generator>
+	</Page>
+	<Page Include="MiscellaneousConverter.xaml">
+		<SubType>Designer</SubType>
+		<Generator>MSBuild:Compile</Generator>
+	</Page>      
     <Page Include="Resources\NumberButtonControl.Resources.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
