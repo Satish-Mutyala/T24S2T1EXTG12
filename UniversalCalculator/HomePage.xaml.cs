@@ -30,7 +30,7 @@ namespace Calculator
 		}
 		private void mortgageCalculatorButton_Click(object sender, RoutedEventArgs e)
 		{
-			throw new NotImplementedException();
+			Frame.Navigate(typeof(MortgageCalculator));
 		}
 		private void currencyCalculatorButton_Click(object sender, RoutedEventArgs e)
 		{
