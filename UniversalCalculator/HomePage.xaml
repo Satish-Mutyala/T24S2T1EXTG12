@@ -73,7 +73,7 @@
 							<GradientStop Color="#FFD1ECDA" Offset="1"/>
 						</LinearGradientBrush>
 					</StackPanel.Background>
-					<Button x:Name="tripCalculator" Content="Trip Calculator" Click="tripCalculatorButton_Click" FontSize="30" Background="#33FD331F" HorizontalAlignment="Center"></Button>
+					<Button x:Name="tripCalculator" Content="Trip Calculator" Click="tripCalculatorButton_Click" FontSize="30" Background="#33FD331F" HorizontalAlignment="Center" Width="264"></Button>
 				</StackPanel>
 
 				<StackPanel Width="534" Padding="10,10,10,10">
